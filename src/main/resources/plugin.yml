@@ -1,0 +1,14 @@
+name: IALottery
+version: 1.0.0
+api-version: '1.20'
+description: A lottery plugin for Minecraft servers.
+main: me.afelia.ialottery.IALottery
+author: elias
+commands:
+  ialotteryget:
+    description: Get a lottery ticket.
+    permission: ialottery.get
+  ialotterygive:
+    description: Give a lottery ticket to another player.
+    permission: ialottery.give
+load: STARTUP

@@ -1,0 +1,170 @@
+# Configuration for the IALottery plugin
+
+# Define the tickets available in the lottery
+tickets:
+  # Ticket configuration for Ticket1
+  Ticket1:
+    # Define rewards that players can win with Ticket1
+    Rewards:
+      # Reward configuration for Reward1
+      Reward1:
+        # Command to execute when the reward is granted
+        command: give %player% diamond 1
+        # Message to display to the player after they teleport back
+        message-after-teleport-back: "&aCongratulations! You received a diamond."
+        # Chance rate of winning this reward (default is 1.0)
+        chance-rate: 1.0
+      # Reward configuration for Reward2
+      Reward2:
+        command: give %player% iron_sword 1
+        message-after-teleport-back: "&aCongratulations! You received an iron sword."
+        chance-rate: 0.5
+
+    # Define properties of the ticket item
+    Ticket-Items:
+      # Display name of the ticket item
+      item-name: "&6Ticket1"
+      # Material type of the ticket item
+      item: PAPER
+      # Custom model data for the ticket item (used for custom textures, default is 0)
+      custom-model-data: 0
+      # Whether the ticket item applies blindness effect during animation
+      blindness-effect: true
+
+    # Define the location of the interactable block for Ticket1
+    interactable-block:
+      world: world
+      x: 100
+      y: 64
+      z: 100
+
+    # Define the teleport location for Ticket1 (optional)
+    teleport-location:
+      world: world
+      x: 105
+      y: 65
+      z: 105
+
+  # Ticket configuration for Ticket2
+  Ticket2:
+    # Define rewards that players can win with Ticket2
+    Rewards:
+      Reward1:
+        command: give %player% emerald 1
+        message-after-teleport-back: "&aCongratulations! You received an emerald."
+        chance-rate: 1.0
+      Reward2:
+        command: give %player% diamond_sword 1
+        message-after-teleport-back: "&aCongratulations! You received a diamond sword."
+        chance-rate: 0.3
+
+    Ticket-Items:
+      item-name: "&6Ticket2"
+      item: PAPER
+      custom-model-data: 0
+      blindness-effect: false
+
+    interactable-block:
+      world: world
+      x: 200
+      y: 64
+      z: 200
+
+    teleport-location:
+      world: world
+      x: 205
+      y: 65
+      z: 205
+
+  # Ticket configuration for Ticket3
+  Ticket3:
+    # Define rewards that players can win with Ticket3
+    Rewards:
+      Reward1:
+        command: give %player% gold_ingot 1
+        message-after-teleport-back: "&aCongratulations! You received a gold ingot."
+        chance-rate: 1.0
+      Reward2:
+        command: give %player% iron_helmet 1
+        message-after-teleport-back: "&aCongratulations! You received an iron helmet."
+        chance-rate: 0.4
+
+    Ticket-Items:
+      item-name: "&6Ticket3"
+      item: PAPER
+      custom-model-data: 0
+      blindness-effect: true
+
+    interactable-block:
+      world: world
+      x: 300
+      y: 64
+      z: 300
+
+    teleport-location:
+      world: world
+      x: 305
+      y: 65
+      z: 305
+
+  # Ticket configuration for Ticket4
+  Ticket4:
+    # Define rewards that players can win with Ticket4
+    Rewards:
+      Reward1:
+        command: give %player% potion 1 8193
+        message-after-teleport-back: "&aCongratulations! You received a potion of swiftness."
+        chance-rate: 1.0
+      Reward2:
+        command: give %player% iron_chestplate 1
+        message-after-teleport-back: "&aCongratulations! You received an iron chestplate."
+        chance-rate: 0.4
+
+    Ticket-Items:
+      item-name: "&6Ticket4"
+      item: PAPER
+      custom-model-data: 0
+      blindness-effect: false
+
+    interactable-block:
+      world: world
+      x: 400
+      y: 64
+      z: 400
+
+    teleport-location:
+      world: world
+      x: 405
+      y: 65
+      z: 405
+
+  # Ticket configuration for Ticket5
+  Ticket5:
+    # Define rewards that players can win with Ticket5
+    Rewards:
+      Reward1:
+        command: give %player% diamond_helmet 1
+        message-after-teleport-back: "&aCongratulations! You received a diamond helmet."
+        chance-rate: 1.0
+      Reward2:
+        command: give %player% gold_block 1
+        message-after-teleport-back: "&aCongratulations! You received a gold block."
+        chance-rate: 0.4
+
+    Ticket-Items:
+      item-name: "&6Ticket5"
+      item: PAPER
+      custom-model-data: 0
+      blindness-effect: true
+
+    interactable-block:
+      world: world
+      x: 500
+      y: 64
+      z: 500
+
+    teleport-location:
+      world: world
+      x: 505
+      y: 65
+      z: 505
